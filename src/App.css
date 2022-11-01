@@ -1,0 +1,119 @@
+.App {
+  text-align: center;
+}
+.main-bg {
+  height: 300px;
+  background-image: url('../public/img/bg.png');
+  background-size: cover;
+  background-position: center;
+}
+.link-page:visited {
+  color: gray;
+}
+.not-exist-detail {
+  margin-top: 20px;
+  color: red;
+}
+.fade-start {
+  opacity: 0;
+}
+.fade-end {
+  opacity: 1;
+  transition: opacity, 0.7s;
+}
+.black {
+  color: black;
+}
+th,
+td {
+  vertical-align: middle;
+}
+.cursor {
+  cursor: pointer;
+}
+.wrapper {
+  position: relative;
+}
+.fixed {
+  position: fixed;
+}
+.sticky {
+  position: sticky;
+}
+.nav-position {
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.viewed-position {
+  position: fixed;
+  top: 56px;
+  right: 6px;
+  width: 100px;
+  opacity: 0.7;
+}
+.main-content {
+  position: absolute;
+  top: 56px;
+  width: 100vw;
+}
+.not-focus:focus {
+  outline: none;
+}
+.not-display {
+  display: none;
+}
+.total-price {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: right;
+  margin-right: 30px;
+}
+.detail-input {
+  text-align: center;
+}
+.cart-input {
+  border: none;
+  text-align: center;
+  width: 60%;
+}
+.shoes-detail-content {
+  margin: 12px;
+}
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .viewed-position {
+    top: 356px;
+    width: 80px;
+  }
+  .shoes-image {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 767px) {
+  .viewed-position {
+    top: 356px;
+    width: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .viewed-position {
+    width: 10vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .viewed-position {
+    width: 100px;
+  }
+  .shoes-image {
+    width: 80%;
+  }
+}
